@@ -1,0 +1,26 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<form method="POST">
+  {% csrf_token %}
+<div class="gfg">
+    <img src="{% static 'blog/images/2.png' %}" align="right" >
+    <button type="button" class=" bt1 "><a href="{%url 'playe'%}" class="button">Play Piano</a></button>
+  <button type="button" class=" bt2"><a href="{%url 'printe'%}" class="button">Piano Image</a></button>
+  <h1 class="textone">Paper-Piano</h1>
+  <h5 class="texttwo">Find out more about us <a href="{%url 'about'%}">here</a></h5>
+  </div>
+</form>
+
+<div class="girl">
+<img src="{% static 'blog/images/1.png' %}" align="right" >
+</div>
+
+
+
+
+{% endblock content %}
